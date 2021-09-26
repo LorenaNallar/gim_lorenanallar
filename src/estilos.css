@@ -1,0 +1,66 @@
+
+.titulo {
+    color: #A8CF45;
+    text-align: center;
+    size: medium;
+}
+
+.contenedorImagenHeader
+{
+    width: 10%;
+    height: 10%;
+    align-items: center;
+    padding: 5px;
+    
+}
+
+
+.contenedorImagen
+{
+    width: 90%;
+    height: 90%;
+    align-items: center;
+    
+}
+
+.contenedorHeader
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #c1e6f0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: bold;
+    font-family: 'Montserrat';
+    font-size: small;
+}
+
+#pie {
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    color: #A8CF45;
+    font-weight: bold;
+    font-family: 'Montserrat';
+    font-size: large; }
+    #pie p {
+      margin-left: 0px;
+      margin-right: 0px; }
+    #pie #pie__imagenes--logoPuna {
+      margin-left: 0px;
+      margin-right: 0px;
+      width: 30%;
+      height: 50%;
+      align-items: center;
+      transition: 2s;
+      margin: 5px; }
+    #pie #pie__imagenes--logoPuna:hover {
+      transform: scale(1.5, 1.5); }
