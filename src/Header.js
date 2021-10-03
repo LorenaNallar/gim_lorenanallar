@@ -1,10 +1,9 @@
 import Logo from "./Logo"
 import Lupa from "./Lupa"
 import Redes from "./Redes"
-import Navbar from "./Navbar"
-import CartWidget from "./CartWidget"
+import CustomNavbar from "./CustomNavbar"
 import './estilos.css'
-import { Container } from "react-bootstrap"
+import {Container} from "react-bootstrap"
 import { Row } from "react-bootstrap"
 import { Col } from "react-bootstrap"
 
@@ -12,22 +11,25 @@ const Header = () => {
 
     return (
         <header>
+            <Container className="encabezado__menu">
             <Row className = "contenedorHeader">
-                    <Col m = {3}> </Col>
-                    <Col m = {1}>  
-                        <Logo/>
-                    </Col>
-                    <Col m = {2}>
-                        <Navbar/>
-                    </Col>
-                    <Col m = {2}>
-                        <Redes/>
-                    </Col>
-                    <Col m = {1}>
-                        <Lupa/>
-                    </Col>
-                    <Col m = {3}> </Col>
-                </Row>
+                <Col>  
+                    <Logo/>
+                </Col>
+                <Col>
+                    <Redes/>
+                </Col>
+                <Col>
+                    <Lupa/>
+                </Col>
+                
+            </Row>
+            <Row className = "contenedorHeader">
+                <Col>
+                    <CustomNavbar/>
+                </Col>
+            </Row>
+            </Container>    
         </header>
     );
 }
