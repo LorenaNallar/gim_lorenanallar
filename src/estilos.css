@@ -82,3 +82,21 @@ h1 {
         font-size: larger;
         text-align: center;
         color: #d1e0d6; }
+
+
+        .itemList__container {
+          /* height: 700px; */
+          display: grid;
+          grid-template-columns: 1fr;
+        }
+        
+        .itemList-content {
+          margin-bottom: 3rem;
+        }
+        
+        .itemList-content p {
+          font: var(--display2);
+          letter-spacing: -1.3px;
+          text-align: center;
+          color: var(--lightMode-primary-color);
+        }
