@@ -1,11 +1,14 @@
 import React from 'react'
 import ItemListContainer from '../components/ItemListContainer'
-import Navegacion from '../components/Navegacion'
+import Image from 'react-bootstrap/Image'
+import Header from '../views/Header'
 
 function Home() {
     return (
         <div>
-            <Navegacion/>
+            
+            <Header/>
+            <Image src="../../  imagenes/novedades - horarios gim.jpeg" fluid />
             <ItemListContainer/>
         </div>
     )

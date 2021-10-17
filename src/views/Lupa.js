@@ -1,5 +1,5 @@
-import ImagenLupa from './imagenes/Lupa (1).png'; 
-import './estilos.css'
+import ImagenLupa from '..imagenes/Lupa (1).png'; 
+import '../estilos.css'
 
 const Lupa = () => {
 

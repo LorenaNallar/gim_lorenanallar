@@ -4,7 +4,7 @@
       "title": "CHALECO CROSS",
       "description": " CHELECO ULTRA 100K + SERIESCHALECO SIMER II 10 L / ULTRA 100K + SERIES",
       "price": 14980,
-      "pictureUrl": "chaleco weiss.jpg",
+      "pictureUrl": "./images/chaleco weiss.jpg",
       "category": "CHALECOS"
     },
     {
@@ -12,7 +12,7 @@
       "title": "CHALECO SIMMER 7 L",
       " ": "CHALECO ULTRA 100 K SERIES.",
       "price": 13980,
-      "pictureUrl": "chaleco cross.jpg",
+      "pictureUrl": "./images/chaleco cross.jpg",
       "category": "CHALECOS"
     },
     {
@@ -20,7 +20,7 @@
       "title": "CALZA KOLIBER LONG",
       "description": "CALZA KOLIBER LONG",
       "price": 4149.00,
-      "pictureUrl": "CALZA KOLIBER LONG.jpg",
+      "pictureUrl": "./images/CALZA KOLIBER LONG.jpg",
       "category": "INDUMENTARIA"
     },
     {
@@ -28,7 +28,7 @@
       "title": "GORRA",
       "description": "TRUCKER CAP",
       "price": 2300.00,
-      "pictureUrl": "GORRA.jpg",
+      "pictureUrl": "./images/GORRA.jpg",
       "category": "INDUMENTARIA"
     },
     {
@@ -36,7 +36,7 @@
       "title": "REMERA LEV",
       "description": "REMERA LEV / ULTRA 100K + SERIES",
       "price": 14.00,
-      "pictureUrl": "REMERA LEV.jpg",
+      "pictureUrl": "./images/REMERA LEV.jpg",
       "category": "INDUMENTARIA"
     },
     {
@@ -44,7 +44,7 @@
       "title": "FUNDA ISOTÉRMICA",
       "description": "FUNDA ISOTÉRMICA",
       "price": 1370.00,
-      "pictureUrl": "fundo isotermica.jpg",
+      "pictureUrl": "./images/fundo isotermica.jpg",
       "category": "ACCESORIOS"
     },
     {
@@ -52,7 +52,7 @@
       "title": "HANDSHELD PORTACAMARA",
       "description": "HANDHELD 500 ML / PORTACARAMAÑOLA DE MANO",
       "price": 1980.00,
-      "pictureUrl": "handsheld.jpg",
+      "pictureUrl": "./images/handsheld.jpg",
       "category": "ACCESORIOS"
     }
 ]

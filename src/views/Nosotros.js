@@ -1,9 +1,10 @@
-import Navegacion from '../components/Navegacion'
+import Header from '../views/Header'
+
 
 function Nosotros() {
     return (
         <div>
-            <Navegacion/>
+            <Header/>
             nosotros
         </div>
     )

@@ -100,3 +100,28 @@ h1 {
           text-align: center;
           color: var(--lightMode-primary-color);
         }
+
+        .contenedor, .contenedorColumna, .contenedorFila {
+          margin: 10px;
+          padding: 10px;
+          align-items: center;
+          /*fuentes*/
+          font-weight: bold;
+          font-family: 'Montserrat';
+          font-size: medium; }
+        
+       
+        .contenedorColumna {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          list-style: none;
+        }
+
+        
+        .contenedorFila {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-evenly;
+          list-style: none;
+        }

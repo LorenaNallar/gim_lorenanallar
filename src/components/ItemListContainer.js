@@ -2,6 +2,9 @@ import React, { useState, useEffect } from "react";
 import ItemList from "./ItemList";
 import axios from 'axios'
 import '../estilos.css'
+import { Row } from "react-bootstrap"
+import { Container } from "react-bootstrap"
+import Header from '../views/Header'
 
 
 function ItemListContainer() {
@@ -21,19 +24,23 @@ function ItemListContainer() {
   
   
   return (
-    <div className="itemList">
+    <>
+    <Header/>
+    
       <div className="wrapper">
-        <div className="itemList-container">
+        <div>
           
           <h2 className="titulo">Productos</h2>
-          <div className='itemList-container'>
-         
-            <ItemList products={products}/>
-          </div>
+          <Container className='contenedor'>
+            <Row className='contenedorFila'>
+              <ItemList products={products}/>
+            </Row>
+          </Container>
           
         </div>
       </div>
-    </div>
+    
+  </>
   )
 }
 

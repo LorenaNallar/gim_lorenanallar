@@ -1,25 +1,22 @@
-import React from 'react'
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
+import { Col } from "react-bootstrap";
 
-
-function Item({ id, image, price, title }) {
+function Item({id,category,image,price,title}) {
   return (
-    <>
-      <div className="col">
-        <div className="card">
-          <div className="card__img">
-            <Link to={'/product/'+id}>
-            <img src={image} alt={title} />
-            </Link>
-          </div>
-        <div className="card__content">
-          <h3>{title}</h3>
-          <p>$ {price.toFixed(2)}</p>
+      <Col>
+        <div className="card" style={{ width: "18rem" }}>
+        <img className="card-img-top" src={image} alt="imagen_producto" />
+        <div className="card-body">
+            <h5 className="card-title">{title}</h5>
+            <p className="card-text">
+            {category} - {price}
+            </p>
+            <Link className="btn btn-primary" to={'/detalleproducto/'+id}>VER</Link>
         </div>
         </div>
-      </div>
-    </>
-  )
+      </Col>
+  );
 }
 
 export default Item;

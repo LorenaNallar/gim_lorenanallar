@@ -1,6 +1,7 @@
-import ImagenRedesFB from './imagenes/FB (1).png'; 
-import ImagenRedesI from './imagenes/IG (1).png'; 
-import './estilos.css';
+import ImagenRedesFB from '../imagenes/IG (1).png'; 
+import ImagenRedesI from '../imagenes/IG (1).png'; 
+
+import '../estilos.css'
 
 const Redes = () => {
 
