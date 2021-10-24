@@ -1,47 +1,41 @@
 import React, { useState, useEffect } from "react";
 import ItemList from "./ItemList";
-import axios from 'axios'
+import { useParams } from "react-router";
+
 import '../estilos.css'
-import { Row } from "react-bootstrap"
-import { Container } from "react-bootstrap"
-import Header from '../views/Header'
+import {useModal} from './ModalContext'
+import {firestore} from '../firebase'
+
+const ItemListContainer = () => {
+    const fakeProduct = {title: "loading", id:"-", price: "-", image: "/loading.gif", description: "loading"}
+    const [products, setProducts] = useState([fakeProduct])
+    const {id} = useParams()
+    const {setModalText, showModal} = useModal()
+
+    useEffect( () => {
+
+        const collectionRef = firestore.collection("products")
+        let query
+
+        if (id === undefined) {
+            query = collectionRef.get()
+        } else {
+            query = collectionRef.where('category', '==', id).get()
+        }
 
 
-function ItemListContainer() {
-  
-  const [products, setProducts] = useState([]);
-  
-  const getItems = () => {
-    axios.get('/products.json')
-    .then(res => {
-      setProducts(res.data)
-    })
-  }
+        query
+            .then( (result) => {
+                setProducts(result.docs.map( p => ({id: p.id, ...p.data()})) )
+            })
+            .catch( error => {
+                setModalText("Ocurrió un error al tratar de obtener los productos")
+                showModal()
+            })
+    },[id])
 
-  useEffect(() => {
-    getItems();    
-  }, []);
-  
-  
-  return (
-    <>
-    <Header/>
-    
-      <div className="wrapper">
-        <div>
-          
-          <h2 className="titulo">Productos</h2>
-          <Container className='contenedor'>
-            <Row className='contenedorFila'>
-              <ItemList products={products}/>
-            </Row>
-          </Container>
-          
-        </div>
-      </div>
-    
-  </>
-  )
+    return (<div className="itemList">
+                <ItemList items={products}/>
+            </div>)
 }
-
 export default ItemListContainer;

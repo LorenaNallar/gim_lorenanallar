@@ -8,7 +8,7 @@ function Home() {
         <div>
             
             <Header/>
-            <Image src="../../  imagenes/novedades - horarios gim.jpeg" fluid />
+            <Image src="../../magenes/novedades - horarios gim.jpeg" fluid />
             <ItemListContainer/>
         </div>
     )
